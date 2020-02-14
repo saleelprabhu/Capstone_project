@@ -1,0 +1,40 @@
+alter table contents modify column content varchar(4000);
+
+insert into contents (id,title,content) values (1,"Java Powers Our Digital World","Java is at the heart of our digital lifestyle. It's the platform for launching careers, exploring human-to-digital interfaces, architecting the world's best applications, and unlocking innovation everywhere-from garages to global organizations.");
+
+insert into contents (id,title,content) values (2,"One Language, One Platform: A Lifetime of Opportunity","When it comes to building computer programming skills, learning Java will take you way beyond the games of your childhood. Knowing Java will be a clear advantage in your future career.
+When you learn Java, you’re learning more than just a language. Because Java is a technology platform with many interconnected capabilities that can give cutting-edge, in-demand job skills. In fact, Java tops Inc.com’s list of the ten most popular programming languages. Java can take you where you want to go.");
+
+insert into contents (id,title,content) values (3,"Heathwood Hall Research","Students from Heathwood Hall in SC show off their Finch Robot moves in one of our most popular activities! Engrossing project for students at any level and using any programming language. Opportunity to teach about different forms of music, or simply make CS a fun, hands-on activity!");
+
+insert into contents (id,title,content) values (4,"Crossroads Elementary Research","Students from Crossroads Elementary in KY demonstrate a maze challenge. Young students build measurement skills & older students expand their abilities to create algorithms. Effortlessly engage students in the 'Four Cs' (collaboration, creativity, communication, and critical thinking)");
+
+insert into contents (id,title,content) values (5,"Oracle Academy","Oracle Academy self-study courses are designed to provide a self-paced learning experience for teachers, students and individuals. Learn how to create games, simulations and other graphical programs using basic Java programming via free educational Java development environments from Carnegie Mellon University (Alice) and the University of Kent (Greenfoot). No prior programming or computer science experience is required");
+
+insert into contents (id,title,content) values (6,"Getting Started with Java Using Alice","Like our Getting Started with Java Using Alice Workshop, this freely available course is designed for teachers, students and individuals with little or no programming experience and teaches basic Java programming concepts through developing 3-D animations in Alice 3.1. Alice is a free, educational, introductory Java development environment created at Carnegie Mellon University. While it is suitable for all beginning learners, it can be especially engaging for girls. Learners will have fun creating animated stories and games using objects and characters from a rich gallery of 3-D models");
+
+insert into keywords (id,keyword) values(1,'java');
+
+insert into keywords (id,keyword) values(2,'finch');
+
+insert into keywords (id,keyword) values(3,'oracle');
+
+insert into keywords (id,keyword) values(4,'alice');
+
+insert into contents_keywords (contents_id,keywords_id) values(1,1);
+
+insert into contents_keywords (contents_id,keywords_id) values(2,1);
+
+insert into contents_keywords (contents_id,keywords_id) values(3,1);
+
+insert into contents_keywords (contents_id,keywords_id) values(3,2);
+
+insert into contents_keywords (contents_id,keywords_id) values(4,1);
+
+insert into contents_keywords (contents_id,keywords_id) values(4,2);
+
+insert into contents_keywords (contents_id,keywords_id) values(5,3);
+
+insert into contents_keywords (contents_id,keywords_id) values(6,1);
+
+insert into contents_keywords (contents_id,keywords_id) values(6,4);
